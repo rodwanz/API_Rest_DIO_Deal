@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    #url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    #username: your-postgres-username
+    #password: your-postgres-password
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
